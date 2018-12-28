@@ -16,16 +16,18 @@ public class InsertByTail {
 
 	// 尾插法建立一个单链表
 	public static  Node tailCreatLinkedList(int[] num) {
-		Node header = new Node();
+		Node head = new Node();
 		Node tail = new Node();
-		header = tail;
-		for (int i = 0; i < num.length; i++) {
+		head = tail;
+		tail = head;
+		head.data=num[0]; //初始化头结点
+		for (int i = 1; i < num.length; i++) {
 			Node p = new Node();
 			p.data = num[i];
 			tail.next = p; // 使新节点成为尾节点 （将表尾终端节点指向新节点）
 			tail = p; // 修改当前指针指向尾节点（将当前新节点定义为表尾终端节点）
 		}
-		return header;
+		return head;
 	}
 
 	public static void main(String[] args) {
