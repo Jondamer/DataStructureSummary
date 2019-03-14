@@ -13,6 +13,8 @@ public class MapDemo {
 //         map的常见操作
 		HashMap <String,Integer> map =new HashMap<>();
 		map.put("a", 1);
+		map.put("b", 1);
+		
 	}
 
 }
