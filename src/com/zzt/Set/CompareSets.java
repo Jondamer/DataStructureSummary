@@ -25,7 +25,7 @@ public class CompareSets {
 	 * 
 	 * @param hs
 	 * @param linkedhs
-	 * @return 
+	 * @return
 	 */
 	public static long compareInInterator(HashSet<Integer> hs, LinkedHashSet<Integer> linkedhs) {
 		// 迭代访问HashSet
@@ -42,6 +42,7 @@ public class CompareSets {
 		while (iterator2.hasNext()) {
 			Integer i = (Integer) iterator2.next();
 		}
+		
 		long endTime2 = System.currentTimeMillis(); // 获取结束时间
 		System.out.println("HashSet的迭代访问的运行时间：" + (endTime - startTime) + "ms"); // 输出程序运行时间
 		System.out.println("LinkedHashSet的迭代访问的运行时间：" + (endTime2 - startTime2) + "ms"); // 输出程序运行时间
