@@ -1,5 +1,7 @@
 package com.zzt.Map;
 
+import java.util.HashMap;
+
 public class MapDemo {
 
 	public MapDemo() {
@@ -9,6 +11,8 @@ public class MapDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //         map的常见操作
+		HashMap <String,Integer> map =new HashMap<>();
+		map.put("a", 1);
 	}
 
 }
