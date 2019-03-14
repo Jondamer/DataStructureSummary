@@ -14,6 +14,8 @@ public class MapDemo {
 		HashMap <String,Integer> map =new HashMap<>();
 		map.put("a", 1);
 		map.put("b", 1);
+		map.put("c", 2);
+               
 		
 	}
 
